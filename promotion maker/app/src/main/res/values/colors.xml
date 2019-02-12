@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+
+    <!-- button color -->
+    <color name="colorDisable">#807c7d</color>
+    <color name="colorEnableShare">#ea7894</color>
+    <color name="colorEnableTakePic">#2388b7</color>
+    <color name="colorEnableSavePromo">#2b7825</color>
+    <color name="colorEnableCrop">#77117b</color>
+    <color name="colorEnableReset">#b30f30</color>
+    <color name="colorEnableSnap">#f7cd23</color>
+    <color name="colorEnableRotate">#5911cc</color>
+
+
+
+
+
+
+</resources>

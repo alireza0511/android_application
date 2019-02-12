@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fenchtose.nocropper.CropperView
+            android:background="#ff282828"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:grid_color="@color/colorAccent"
+            app:padding_color="@color/colorAccent"
+            app:grid_opacity="0.8"
+            app:grid_thickness="0.8dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/snap_button"
+                android:padding="8dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="left|bottom"
+                android:background="@drawable/black_tranp_circle_ripple"
+                android:src="@android:drawable/arrow_down_float"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/rotate_button"
+                android:padding="8dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/black_tranp_circle_ripple"
+                android:src="@android:drawable/ic_menu_rotate"/>
+        </com.fenchtose.nocropper.CropperView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CROP"
+            android:id="@+id/btnCrop"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toggle Gesture"
+            android:id="@+id/btnToggle"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/template_menu"
+        android:title="more template"
+        app:showAsAction="ifRoom"
+        >
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/opt_template1"
+                android:title="template 1"
+                app:showAsAction="ifRoom" />
+            <item android:id="@+id/opt_template2"
+                android:title="template 2" />
+            <item android:id="@+id/opt_template3"
+                android:title="template 3"
+                app:showAsAction="ifRoom" />
+            <item android:id="@+id/opt_template4"
+                android:title="template 4" />
+        </menu>
+    </item>
+
+
+    <item android:id="@+id/more_info"
+        android:title="more info" />
+</menu>
